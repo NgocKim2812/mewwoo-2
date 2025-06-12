@@ -8,12 +8,10 @@
   <style>
     .logoimg { height: 62px; vertical-align: middle; margin-right: 10px;}
     .hero-img img { max-width: 380px; }
-    .device-gallery { display: flex; flex-wrap: wrap; gap: 18px; margin: 18px 0 0 0;}
-    .device-gallery img { width: 180px; border-radius: 14px; box-shadow: 0 2px 10px #1866f220; background:#fff;}
+    .device-img-main { width: 90%; max-width: 420px; border-radius: 14px; box-shadow: 0 2px 10px #1866f220; background: #fff; display: block; margin: 0 auto 18px auto;}
     .pet-row { display: flex; gap: 18px; justify-content: center; margin: 22px 0;}
-    .pet-row img { width: 170px; height: 170px; object-fit: cover; border-radius: 18px; box-shadow: 0 2px 10px #1866f220;}
+    .pet-row img { width: 170px; height: 170px; object-fit: cover; border-radius: 18px; box-shadow: 0 2px 10px #1866f220; background: #fff;}
     @media (max-width: 900px) {
-      .device-gallery { justify-content: center; }
       .pet-row { flex-direction: column; align-items: center;}
       .pet-row img { width: 90vw; max-width: 320px; height: auto;}
     }
@@ -25,7 +23,7 @@
     <div class="container header-flex">
       <div class="logo">
         <img src="logo-mewwoo.png" alt="Mewwoo logo" class="logoimg" />
-        <span>Mewwoo<span class="dot-blue">.</span></span>
+        <span style="font-weight:bold;font-size:2rem;">Mewwoo<span class="dot-blue" style="color:#2196f3;">.</span></span>
       </div>
       <nav>
         <ul>
@@ -57,9 +55,9 @@
         </div>
         <!-- Hàng ảnh chó mèo sinh động -->
         <div class="pet-row">
-          <img src="https://images.unsplash.com/photo-1518715308788-3005759c41e4?auto=format&fit=crop&w=400&q=80" alt="Dog" />
-          <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Cat" />
-          <img src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=400&q=80" alt="Dog and Cat" />
+          <img src="https://images.unsplash.com/photo-1518715308788-3005759c41e4?auto=format&fit=crop&w=400&q=80" alt="Chó dễ thương" />
+          <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Mèo đáng yêu" />
+          <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=400&q=80" alt="Chó và mèo cùng nhau" />
         </div>
       </div>
       <div class="hero-img">
@@ -101,13 +99,8 @@
   <section class="features" id="features">
     <div class="container feature-flex">
       <div class="feature-img">
-        <!-- Gallery ảnh thiết bị -->
-        <div class="device-gallery">
-          <img src="device1.jpg" alt="Vòng cổ Mewwoo 1" />
-          <img src="device2.jpg" alt="Vòng cổ Mewwoo 2" />
-          <img src="device3.jpg" alt="Vòng cổ Mewwoo 3" />
-          <img src="device4.jpg" alt="Vòng cổ Mewwoo 4" />
-        </div>
+        <!-- Hiển thị 1 ảnh thiết bị duy nhất -->
+        <img src="device-gallery.png" alt="Vòng cổ Mewwoo" class="device-img-main" />
         <div class="spec-list">
           <span>Chống nước IP67</span>
           <span>Pin 7 ngày</span>
@@ -125,15 +118,13 @@
         <a href="#" class="btn-blue">Xem chi tiết tính năng</a>
         <!-- Ảnh chó mèo dễ thương bổ sung bên dưới -->
         <div class="pet-row" style="margin-top:20px;">
-          <img src="https://images.unsplash.com/photo-1518715308788-3005759c41e4?auto=format&fit=crop&w=400&q=80" alt="Dog" />
-          <img src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=400&q=80" alt="Dog and Cat" />
-          <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Cat" />
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Chó nhìn nghiêng" />
+          <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Mèo xám lông dài" />
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Chó và mèo thân thiết" />
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Giữ nguyên các phần khác của website, không cần sửa ở đây để tránh dài quá -->
 
   <!-- FOOTER -->
   <footer>
